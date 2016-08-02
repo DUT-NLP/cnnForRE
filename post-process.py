@@ -31,4 +31,4 @@ with open("out.txt") as f:
         id = line.strip().split("|")[0]
         relations = findRelations(line.strip())
         for relation in relations:
-            gold.write(id + " " + relation + "\n")
+            gold.write(id + "\t" + relation + "\n")
